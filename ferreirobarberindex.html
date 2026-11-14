@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferreiro Barber Club | Parada Inglesa — São Paulo SP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            bgMain: '#09090B',
+            bgCard: '#111114',
+            bgCardInner: '#18181D',
+            brandGold: '#D97706',
+            brandGoldLight: '#F59E0B',
+            brandGreen: '#16A34A',
+            brandGreenHover: '#15803D',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #09090B;
+      color: #FAFAFA;
+    }
+    .hero-overlay {
+      background: radial-gradient(circle at 75% 40%, rgba(217, 119, 6, 0.15), transparent 48%),
+                  linear-gradient(to right, rgba(9, 9, 11, 0.96) 42%, rgba(9, 9, 11, 0.80) 100%),
+                  url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-brandGold selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-bgMain/95 backdrop-blur-md border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      <a href="#inicio" class="flex items-center gap-3 shrink-0">
+        <div class="w-10 h-10 rounded-xl border border-brandGold/70 bg-brandGold/10 flex items-center justify-center text-brandGoldLight shadow-md">
+          <i class="fa-solid fa-scissors text-base"></i>
+        </div>
+        <div>
+          <span class="font-display text-lg sm:text-xl font-bold tracking-wider text-white leading-none block">FERREIRO BARBER</span>
+          <span class="text-[9px] tracking-[0.22em] text-zinc-400 font-semibold uppercase block mt-1">
+            Parada Inglesa • Zona Norte SP
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold text-zinc-300">
+        <a href="#inicio" class="hover:text-white transition">Início</a>
+        <a href="#equipe" class="hover:text-white transition">Equipe</a>
+        <a href="#servicos" class="hover:text-white transition">Serviços</a>
+        <a href="#assinaturas" class="hover:text-brandGoldLight text-amber-400 transition">Clube de Assinatura</a>
+        <a href="#localizacao" class="hover:text-white transition">Localização</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://www.instagram.com/ferreirobarberclub" target="_blank" aria-label="Instagram Ferreiro Barber Club"
+           class="w-9 h-9 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-white flex items-center justify-center transition">
+          <i class="fa-brands fa-instagram text-base"></i>
+        </a>
+        <button onclick="abrirSimulador()"
+                class="hidden sm:inline-flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition cursor-pointer">
+          Simular Horário
+        </button>
+        <a href="https://wa.me/5511949556369?text=Salve!%20Vim%20pelo%20site%20da%20Ferreiro%20Barber%20Club%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+           target="_blank"
+           class="bg-brandGreen hover:bg-brandGreenHover text-white text-xs font-bold px-4 py-2.5 rounded-lg transition flex items-center gap-2 shadow-lg shadow-brandGreen/25">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Agendar</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-overlay min-h-screen flex items-center pt-28 pb-16 px-4 sm:px-6 border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-10 items-center">
+      
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-brandGold/40 text-brandGoldLight text-xs font-bold uppercase tracking-wider mb-6">
+          <span>★★★★★</span>
+          <span class="text-white">NOTA MÁXIMA 5.0 NO GOOGLE • PARADA INGLESA</span>
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold text-white uppercase leading-[1.05] tracking-tight mb-6">
+          ESTILO, PRECISÃO E<br>
+          RESENHA NA <span class="text-brandGoldLight">FERREIRO BARBER</span>
+        </h1>
+
+        <p class="text-zinc-300 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+          Referência na Av. General Ataliba Leonel. Escolha seu barbeiro favorito, conheça nossos planos de assinatura ilimitados e agende direto pelo WhatsApp.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-12">
+          <button onclick="abrirSimulador()"
+             class="bg-brandGreen hover:bg-brandGreenHover text-white font-bold px-7 py-4 rounded-xl transition flex items-center justify-center gap-2.5 text-sm shadow-xl shadow-brandGreen/25 cursor-pointer">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Agendar Horário Agora
+          </button>
+          <a href="#assinaturas"
+             class="bg-zinc-900/90 hover:bg-zinc-800 border border-brandGold/50 text-brandGoldLight font-bold px-7 py-4 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+            <i class="fa-solid fa-crown"></i>
+            Clube de Assinatura
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-zinc-800/90 max-w-lg">
+          <div>
+            <p class="font-display text-2xl sm:text-3xl font-bold text-white">5.0 ★</p>
+            <p class="text-xs text-zinc-400 mt-0.5">+210 Avaliações Google</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl sm:text-3xl font-bold text-brandGoldLight">5 PROS</p>
+            <p class="text-xs text-zinc-400 mt-0.5">Time Especializado</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl sm:text-3xl font-bold text-brandGreen">CLUBE</p>
+            <p class="text-xs text-zinc-400 mt-0.5">Planos Ilimitados</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Direita -->
+      <div class="lg:col-span-5">
+        <div class="bg-bgCard/95 border border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-2xl">
+          <div class="flex items-center justify-between text-xs pb-4 mb-4 border-b border-zinc-800/80">
+            <span class="flex items-center gap-2 text-emerald-400 font-bold tracking-wider uppercase">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              AGENDA DISPONÍVEL
+            </span>
+            <a href="https://www.instagram.com/ferreirobarberclub" target="_blank" class="px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-700 hover:border-brandGold text-zinc-300 hover:text-white font-semibold text-[11px] flex items-center gap-1.5 transition">
+              <i class="fa-brands fa-instagram text-brandGoldLight"></i> @ferreirobarberclub
+            </a>
+          </div>
+
+          <div class="rounded-2xl border border-brandGold/40 bg-gradient-to-b from-zinc-900 to-black p-7 text-center mb-4 flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl bg-brandGold/15 border border-brandGold/50 flex items-center justify-center text-brandGoldLight mb-4">
+              <i class="fa-solid fa-scissors text-2xl"></i>
+            </div>
+            <p class="font-display text-2xl sm:text-3xl font-bold tracking-widest text-white leading-none">
+              FERREIRO BARBER
+            </p>
+            <p class="text-[10px] tracking-[0.25em] text-brandGoldLight font-bold uppercase mt-2.5">
+              — PARADA INGLESA • SÃO PAULO —
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-zinc-800 bg-bgCardInner p-4 mb-4 space-y-1.5">
+            <p class="text-white font-bold text-sm">Av. General Ataliba Leonel, 2436</p>
+            <p class="text-zinc-400 text-xs">Parada Inglesa / Carandiru • CEP 02033-020</p>
+            <p class="text-xs text-brandGoldLight pt-1"><i class="fa-regular fa-clock mr-1"></i> Seg a Sex: 10h às 20h • Sáb: 09h às 19h</p>
+          </div>
+
+          <button onclick="abrirSimulador()"
+                  class="w-full bg-brandGold hover:bg-amber-500 text-black font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-brandGold/20">
+            <i class="fa-regular fa-calendar-check text-base"></i>
+            ESCOLHER BARBEIRO E HORÁRIO
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe de Profissionais -->
+  <section id="equipe" class="py-20 px-4 sm:px-6 bg-bgMain border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-brandGoldLight font-bold text-xs uppercase tracking-[0.25em]">Nosso Time</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white uppercase mt-1">Escolha Seu Barbeiro</h2>
+        </div>
+        <p class="text-zinc-400 text-sm max-w-md">Clique no profissional de sua preferência para já iniciar seu agendamento com ele.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
+        
+        <!-- Artur -->
+        <div class="bg-bgCard border border-zinc-800 hover:border-brandGold/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition">
+          <div>
+            <div class="aspect-square bg-zinc-900 overflow-hidden">
+              <img src="https://s3-sa-east-1.amazonaws.com/img-appbarber-appbeleza/ferreirobarber/672f624e6db72.png" 
+                   alt="Barbeiro Artur" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-base font-bold text-white">Artur</h3>
+              <p class="text-xs text-zinc-400 mt-0.5">Barbeiro Especialista</p>
+            </div>
+          </div>
+          <div class="px-4 pb-4">
+            <button onclick="abrirSimulador('', 'Artur')" class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold py-2.5 rounded-xl transition cursor-pointer">
+              Agendar com Artur
+            </button>
+          </div>
+        </div>
+
+        <!-- Kennedy -->
+        <div class="bg-bgCard border border-zinc-800 hover:border-brandGold/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition">
+          <div>
+            <div class="aspect-square bg-zinc-900 overflow-hidden">
+              <img src="https://img-appbarber-appbeleza.s3.amazonaws.com/ferreirobarber%2F245191401769443448929" 
+                   alt="Barbeiro Kennedy" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-base font-bold text-white">Kennedy</h3>
+              <p class="text-xs text-zinc-400 mt-0.5">Barbeiro Especialista</p>
+            </div>
+          </div>
+          <div class="px-4 pb-4">
+            <button onclick="abrirSimulador('', 'Kennedy')" class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold py-2.5 rounded-xl transition cursor-pointer">
+              Agendar com Kennedy
+            </button>
+          </div>
+        </div>
+
+        <!-- Magrão -->
+        <div class="bg-bgCard border border-zinc-800 hover:border-brandGold/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition">
+          <div>
+            <div class="aspect-square bg-zinc-900 overflow-hidden">
+              <img src="https://img-appbarber-appbeleza.s3.amazonaws.com/ferreirobarber%2F199623921769443641504" 
+                   alt="Barbeiro Magrão" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-base font-bold text-white">Magrão</h3>
+              <p class="text-xs text-zinc-400 mt-0.5">Barbeiro Especialista</p>
+            </div>
+          </div>
+          <div class="px-4 pb-4">
+            <button onclick="abrirSimulador('', 'Magrão')" class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold py-2.5 rounded-xl transition cursor-pointer">
+              Agendar com Magrão
+            </button>
+          </div>
+        </div>
+
+        <!-- Marcos -->
+        <div class="bg-bgCard border border-zinc-800 hover:border-brandGold/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition">
+          <div>
+            <div class="aspect-square bg-zinc-900 overflow-hidden">
+              <img src="https://img-appbarber-appbeleza.s3.amazonaws.com/ferreirobarber%2F169984861742941783491" 
+                   alt="Barbeiro Marcos" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-base font-bold text-white">Marcos</h3>
+              <p class="text-xs text-zinc-400 mt-0.5">Barbeiro Especialista</p>
+            </div>
+          </div>
+          <div class="px-4 pb-4">
+            <button onclick="abrirSimulador('', 'Marcos')" class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold py-2.5 rounded-xl transition cursor-pointer">
+              Agendar com Marcos
+            </button>
+          </div>
+        </div>
+
+        <!-- Michel -->
+        <div class="bg-bgCard border border-zinc-800 hover:border-brandGold/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition col-span-2 sm:col-span-1">
+          <div>
+            <div class="aspect-square bg-zinc-900 overflow-hidden">
+              <img src="https://img-appbarber-appbeleza.s3.amazonaws.com/ferreirobarber%2F107671131769443676153" 
+                   alt="Barbeiro Michel" 
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4 text-center">
+              <h3 class="text-base font-bold text-white">Michel</h3>
+              <p class="text-xs text-zinc-400 mt-0.5">Barbeiro Especialista</p>
+            </div>
+          </div>
+          <div class="px-4 pb-4">
+            <button onclick="abrirSimulador('', 'Michel')" class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold py-2.5 rounded-xl transition cursor-pointer">
+              Agendar com Michel
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabela Completa de Serviços -->
+  <section id="servicos" class="py-20 px-4 sm:px-6 bg-bgCard border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-brandGoldLight font-bold text-xs uppercase tracking-[0.25em]">Menu Completo</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white uppercase mt-1">Tabela de Serviços</h2>
+        </div>
+        <p class="text-zinc-400 text-sm max-w-md">Todos os 22 serviços oficiais da Ferreiro Barber com tempo estimado e agendamento rápido.</p>
+      </div>
+
+      <!-- Combos em Destaque -->
+      <h3 class="text-xs font-extrabold uppercase tracking-widest text-brandGoldLight mb-4">Combos Mais Pedidos</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+
+        <div class="bg-bgMain border-2 border-brandGold rounded-2xl p-5 relative flex flex-col justify-between">
+          <span class="absolute -top-3 right-4 bg-brandGold text-black text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full">Plano Disponível</span>
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-1">
+              <h4 class="text-base font-bold text-white">Corte + Barba</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 140,00</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> 60 min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Barba (R$ 140,00)')" class="w-full bg-brandGold hover:bg-amber-500 text-black font-extrabold text-xs py-2.5 rounded-xl uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-1">
+              <h4 class="text-base font-bold text-white">Corte + Barba + Sobrancelhas</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 160,00</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> 60 min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Barba + Sobrancelhas (R$ 160,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-xl uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-1">
+              <h4 class="text-base font-bold text-white">Corte + Barboterapia</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 160,00</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> 60 min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Barboterapia (R$ 160,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-xl uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-1">
+              <h4 class="text-base font-bold text-white">Corte + Barboterapia + Sobrancelhas</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 180,00</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> 60 min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Barboterapia + Sobrancelhas (R$ 180,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-xl uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-1">
+              <h4 class="text-base font-bold text-white">Corte + Sobrancelhas</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 90,00</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> 30 min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte + Sobrancelhas (R$ 90,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-xl uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/60 rounded-2xl p-5 flex flex-col justify-between transition">
+          <div>
+            <div class="flex justify-between items-start gap-2 mb-1">
+              <h4 class="text-base font-bold text-white">Corte Raspado (1 pente) + Barba</h4>
+              <span class="text-brandGoldLight font-extrabold text-lg shrink-0">R$ 120,00</span>
+            </div>
+            <p class="text-zinc-400 text-xs mb-4"><i class="fa-regular fa-clock mr-1"></i> 60 min</p>
+          </div>
+          <button onclick="abrirSimulador('Corte Raspado (1 pente) + Barba (R$ 120,00)')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs py-2.5 rounded-xl uppercase tracking-wider cursor-pointer transition">Agendar</button>
+        </div>
+
+      </div>
+
+      <!-- Serviços Avulsos & Química -->
+      <h3 class="text-xs font-extrabold uppercase tracking-widest text-zinc-400 mb-4">Cortes, Barba & Estética Masculina</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h4 class="text-sm font-bold text-white">Corte</h4>
+              <span class="text-[9px] bg-brandGold/20 text-brandGoldLight px-1.5 py-0.5 rounded font-bold">Plano</span>
+            </div>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 70,00</p>
+          </div>
+          <button onclick="abrirSimulador('Corte (R$ 70,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Corte Raspado (1 pente)</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 50,00</p>
+          </div>
+          <button onclick="abrirSimulador('Corte Raspado 1 pente (R$ 50,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h4 class="text-sm font-bold text-white">Barba</h4>
+              <span class="text-[9px] bg-brandGold/20 text-brandGoldLight px-1.5 py-0.5 rounded font-bold">Plano</span>
+            </div>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 70,00</p>
+          </div>
+          <button onclick="abrirSimulador('Barba (R$ 70,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Barba + Sobrancelhas</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 90,00</p>
+          </div>
+          <button onclick="abrirSimulador('Barba + Sobrancelhas (R$ 90,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Barboterapia</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 90,00</p>
+          </div>
+          <button onclick="abrirSimulador('Barboterapia (R$ 90,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Barboterapia + Sobranc.</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 110,00</p>
+          </div>
+          <button onclick="abrirSimulador('Barboterapia + Sobrancelhas (R$ 110,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h4 class="text-sm font-bold text-white">Acabamento</h4>
+              <span class="text-[9px] bg-brandGold/20 text-brandGoldLight px-1.5 py-0.5 rounded font-bold">Plano</span>
+            </div>
+            <p class="text-zinc-400 text-[11px] mt-0.5">15 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 20,00</p>
+          </div>
+          <button onclick="abrirSimulador('Acabamento (R$ 20,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Sobrancelhas</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">15 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 20,00</p>
+          </div>
+          <button onclick="abrirSimulador('Sobrancelhas (R$ 20,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Limpeza de Pele</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">15 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 30,00</p>
+          </div>
+          <button onclick="abrirSimulador('Limpeza de Pele (R$ 30,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Hidratação</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">15 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 40,00</p>
+          </div>
+          <button onclick="abrirSimulador('Hidratação (R$ 40,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Depilação Cera Quente</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">R$ 40,00</p>
+          </div>
+          <button onclick="abrirSimulador('Depilação Cera Quente (R$ 40,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Pigmentação Barba</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">30 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">A partir de R$ 70</p>
+          </div>
+          <button onclick="abrirSimulador('Pigmentação Barba (A partir de R$ 70,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Coloração Cabelo</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">60 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">A partir de R$ 100</p>
+          </div>
+          <button onclick="abrirSimulador('Coloração Cabelo (A partir de R$ 100,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Luzes</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">45 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">A partir de R$ 100</p>
+          </div>
+          <button onclick="abrirSimulador('Luzes (A partir de R$ 100,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Botox Capilar</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">60 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">A partir de R$ 110</p>
+          </div>
+          <button onclick="abrirSimulador('Botox (A partir de R$ 110,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandGold/50 rounded-2xl p-4 flex items-center justify-between gap-3 transition">
+          <div>
+            <h4 class="text-sm font-bold text-white">Progressiva</h4>
+            <p class="text-zinc-400 text-[11px] mt-0.5">60 min</p>
+            <p class="text-brandGoldLight font-extrabold text-sm mt-1">A partir de R$ 120</p>
+          </div>
+          <button onclick="abrirSimulador('Progressiva (A partir de R$ 120,00)')" class="bg-zinc-900 hover:bg-brandGold hover:text-black border border-zinc-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition cursor-pointer shrink-0">Agendar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Clube de Assinaturas -->
+  <section id="assinaturas" class="py-20 px-4 sm:px-6 bg-bgMain border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-brandGoldLight font-bold text-xs uppercase tracking-[0.25em]">Ferreiro Barber Club</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold text-white uppercase mt-1 mb-3">Planos de Assinatura</h2>
+        <p class="text-zinc-400 text-sm">Esteja sempre na régua pagando um valor fixo mensal. Todos os planos garantem <strong class="text-white">10% de desconto em produtos e outros serviços</strong>.</p>
+      </div>
+
+      <!-- Linha Basic (Seg a Qua) -->
+      <h3 class="text-xs font-extrabold uppercase tracking-widest text-zinc-400 mb-4 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-zinc-500"></span> Planos Basic • Ilimitado de Segunda à Quarta
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+
+        <div class="bg-bgCard border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Segunda à Quarta</span>
+            <h4 class="font-display text-xl font-bold text-white mt-1">CORTE BASIC</h4>
+            <p class="text-3xl font-extrabold text-white mt-3 mb-5">R$ 119,00<span class="text-xs font-normal text-zinc-400">/mês</span></p>
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Corte + Acabamento Ilimitado (Seg à Qua)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10% de desconto em produtos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10% de desconto em outros serviços</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511949556369?text=Salve!%20Quero%20assinar%20o%20plano%20CORTE%20BASIC%20(R%24%20119%2C00%2Fm%C3%AAs)%20da%20Ferreiro%20Barber." target="_blank"
+             class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center transition">
+            Assinar Corte Basic
+          </a>
+        </div>
+
+        <div class="bg-bgCard border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Segunda à Quarta</span>
+            <h4 class="font-display text-xl font-bold text-white mt-1">BARBA BASIC</h4>
+            <p class="text-3xl font-extrabold text-white mt-3 mb-5">R$ 149,00<span class="text-xs font-normal text-zinc-400">/mês</span></p>
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Barba Ilimitada (Seg à Qua)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10% de desconto em produtos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10% de desconto em outros serviços</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511949556369?text=Salve!%20Quero%20assinar%20o%20plano%20BARBA%20BASIC%20(R%24%20149%2C00%2Fm%C3%AAs)%20da%20Ferreiro%20Barber." target="_blank"
+             class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center transition">
+            Assinar Barba Basic
+          </a>
+        </div>
+
+        <div class="bg-bgCard border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Segunda à Quarta</span>
+            <h4 class="font-display text-xl font-bold text-white mt-1">CORTE E BARBA BASIC</h4>
+            <p class="text-3xl font-extrabold text-white mt-3 mb-5">R$ 229,00<span class="text-xs font-normal text-zinc-400">/mês</span></p>
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Corte + Barba + Acabamento Ilimitado (Seg à Qua)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10% de desconto em produtos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10% de desconto em outros serviços</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511949556369?text=Salve!%20Quero%20assinar%20o%20plano%20CORTE%20E%20BARBA%20BASIC%20(R%24%20229%2C00%2Fm%C3%AAs)%20da%20Ferreiro%20Barber." target="_blank"
+             class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center transition">
+            Assinar Corte e Barba Basic
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Linha Premium (Seg a Sab) -->
+      <h3 class="text-xs font-extrabold uppercase tracking-widest text-brandGoldLight mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-crown"></i> Planos Premium • Ilimitado de Segunda à Sábado
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-bgCard border border-brandGold/40 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-brandGoldLight">Segunda à Sábado</span>
+            <h4 class="font-display text-xl font-bold text-white mt-1">CORTE PREMIUM</h4>
+            <p class="text-3xl font-extrabold text-brandGoldLight mt-3 mb-5">R$ 139,00<span class="text-xs font-normal text-zinc-400">/mês</span></p>
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> Corte + Acabamento Ilimitado (Seg à Sáb)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> 10% de desconto em produtos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> 10% de desconto em outros serviços</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511949556369?text=Salve!%20Quero%20assinar%20o%20plano%20CORTE%20PREMIUM%20(R%24%20139%2C00%2Fm%C3%AAs)%20da%20Ferreiro%20Barber." target="_blank"
+             class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-brandGold/50 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center transition">
+            Assinar Corte Premium
+          </a>
+        </div>
+
+        <div class="bg-bgCard border border-brandGold/40 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-brandGoldLight">Segunda à Sábado</span>
+            <h4 class="font-display text-xl font-bold text-white mt-1">BARBA PREMIUM</h4>
+            <p class="text-3xl font-extrabold text-brandGoldLight mt-3 mb-5">R$ 169,00<span class="text-xs font-normal text-zinc-400">/mês</span></p>
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> Barba Ilimitada (Seg à Sáb)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> 10% de desconto em produtos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> 10% de desconto em outros serviços</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511949556369?text=Salve!%20Quero%20assinar%20o%20plano%20BARBA%20PREMIUM%20(R%24%20169%2C00%2Fm%C3%AAs)%20da%20Ferreiro%20Barber." target="_blank"
+             class="w-full bg-zinc-900 hover:bg-brandGold hover:text-black border border-brandGold/50 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center transition">
+            Assinar Barba Premium
+          </a>
+        </div>
+
+        <div class="bg-bgCard border-2 border-brandGold rounded-3xl p-6 relative flex flex-col justify-between shadow-xl shadow-brandGold/10">
+          <span class="absolute -top-3 right-5 bg-brandGold text-black text-[10px] font-extrabold uppercase px-3 py-1 rounded-full">Mais Completo</span>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-brandGoldLight">Segunda à Sábado</span>
+            <h4 class="font-display text-xl font-bold text-white mt-1">CORTE E BARBA PREMIUM</h4>
+            <p class="text-3xl font-extrabold text-brandGoldLight mt-3 mb-5">R$ 259,00<span class="text-xs font-normal text-zinc-400">/mês</span></p>
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> Corte + Barba + Acabamento Ilimitado (Seg à Sáb)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> 10% de desconto em produtos</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGoldLight"></i> 10% de desconto em outros serviços</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511949556369?text=Salve!%20Quero%20assinar%20o%20plano%20CORTE%20E%20BARBA%20PREMIUM%20(R%24%20259%2C00%2Fm%C3%AAs)%20da%20Ferreiro%20Barber." target="_blank"
+             class="w-full bg-brandGold hover:bg-amber-500 text-black font-extrabold text-xs uppercase tracking-wider py-3.5 rounded-xl text-center transition">
+            Assinar Plano Completo
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização, Horários e Pagamentos -->
+  <section id="localizacao" class="py-20 px-4 sm:px-6 bg-bgCard border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-8">
+      
+      <!-- Endereço -->
+      <div class="bg-bgMain border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-brandGoldLight font-bold text-xs uppercase tracking-widest">Localização</span>
+          <h3 class="font-display text-2xl font-bold text-white uppercase mt-1 mb-3">Como Chegar</h3>
+          <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+            Avenida General Ataliba Leonel, 2436<br>
+            Parada Inglesa / Carandiru — São Paulo/SP<br>
+            <span class="text-zinc-400 text-xs">CEP: 02033-020</span>
+          </p>
+        </div>
+        <a href="https://maps.google.com/?q=Avenida+General+Ataliba+Leonel,+2436+-+02033-020+Sao+Paulo+SP" target="_blank"
+           class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl flex items-center justify-center gap-2 transition">
+          <i class="fa-solid fa-location-arrow text-brandGoldLight"></i> Abrir no Google Maps
+        </a>
+      </div>
+
+      <!-- Horários -->
+      <div class="bg-bgMain border border-zinc-800 rounded-3xl p-6">
+        <span class="text-brandGoldLight font-bold text-xs uppercase tracking-widest">Funcionamento</span>
+        <h3 class="font-display text-2xl font-bold text-white uppercase mt-1 mb-4">Horários</h3>
+        <ul class="space-y-2 text-xs text-zinc-300">
+          <li class="flex justify-between py-1.5 border-b border-zinc-800/80"><span>Segunda-Feira</span><span class="font-bold text-white">10:00 - 20:00</span></li>
+          <li class="flex justify-between py-1.5 border-b border-zinc-800/80"><span>Terça-Feira</span><span class="font-bold text-white">10:00 - 20:00</span></li>
+          <li class="flex justify-between py-1.5 border-b border-zinc-800/80"><span>Quarta-Feira</span><span class="font-bold text-white">10:00 - 20:00</span></li>
+          <li class="flex justify-between py-1.5 border-b border-zinc-800/80"><span>Quinta-Feira</span><span class="font-bold text-white">10:00 - 20:00</span></li>
+          <li class="flex justify-between py-1.5 border-b border-zinc-800/80"><span>Sexta-Feira</span><span class="font-bold text-white">10:00 - 20:00</span></li>
+          <li class="flex justify-between py-1.5"><span>Sábado</span><span class="font-bold text-brandGoldLight">09:00 - 19:00</span></li>
+        </ul>
+      </div>
+
+      <!-- Formas de Pagamento -->
+      <div class="bg-bgMain border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-brandGoldLight font-bold text-xs uppercase tracking-widest">Facilidades</span>
+          <h3 class="font-display text-2xl font-bold text-white uppercase mt-1 mb-4">Formas de Pagamento</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 font-semibold">PIX</span>
+            <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 font-semibold">Cartão de Crédito</span>
+            <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 font-semibold">Cartão de Débito</span>
+            <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 font-semibold">Dinheiro</span>
+            <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 font-semibold">Transferência</span>
+            <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 font-semibold">Crédito On-line</span>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/ferreirobarberclub" target="_blank"
+           class="w-full mt-6 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl flex items-center justify-center gap-2 transition">
+          <i class="fa-brands fa-instagram text-brandGoldLight text-base"></i> Seguir @ferreirobarberclub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-zinc-800 py-10 px-4 text-center">
+    <p class="font-display text-xl font-bold text-white tracking-wider">FERREIRO BARBER CLUB</p>
+    <p class="text-xs text-zinc-400 mt-1">Av. General Ataliba Leonel, 2436 • Parada Inglesa • São Paulo - SP</p>
+    <div class="flex items-center justify-center gap-4 mt-4 text-xs text-zinc-400">
+      <a href="https://wa.me/5511949556369" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i> (11) 94955-6369</a>
+      <span>•</span>
+      <a href="https://www.instagram.com/ferreirobarberclub" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-instagram text-brandGoldLight mr-1"></i> @ferreirobarberclub</a>
+    </div>
+  </footer>
+
+  <!-- Modal Simulador -->
+  <div id="modalSimulador" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-bgCard border border-zinc-700 rounded-3xl max-w-md w-full p-6 relative shadow-2xl">
+      <button onclick="fecharSimulador()" class="absolute top-5 right-5 text-zinc-400 hover:text-white text-lg cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="text-brandGoldLight font-bold text-[11px] uppercase tracking-widest">Agendamento Rápido</span>
+      <h3 class="font-display text-2xl font-bold text-white uppercase mt-1 mb-5">Reservar Horário</h3>
+
+      <form onsubmit="enviarWhatsApp(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1">Seu Nome</label>
+          <input type="text" id="clienteNome" required placeholder="Digite seu nome"
+                 class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brandGold">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1">Profissional</label>
+          <select id="clienteBarbeiro" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brandGold">
+            <option value="Qualquer profissional disponível">Sem preferência (Primeiro disponível)</option>
+            <option value="Artur">Artur</option>
+            <option value="Kennedy">Kennedy</option>
+            <option value="Magrão">Magrão</option>
+            <option value="Marcos">Marcos</option>
+            <option value="Michel">Michel</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1">Serviço Desejado</label>
+          <select id="clienteServico" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brandGold">
+            <option value="Corte + Barba (R$ 140,00)">Corte + Barba — R$ 140,00 (60 min)</option>
+            <option value="Corte + Barba + Sobrancelhas (R$ 160,00)">Corte + Barba + Sobrancelhas — R$ 160,00 (60 min)</option>
+            <option value="Corte + Barboterapia (R$ 160,00)">Corte + Barboterapia — R$ 160,00 (60 min)</option>
+            <option value="Corte + Barboterapia + Sobrancelhas (R$ 180,00)">Corte + Barboterapia + Sobrancelhas — R$ 180,00 (60 min)</option>
+            <option value="Corte + Sobrancelhas (R$ 90,00)">Corte + Sobrancelhas — R$ 90,00 (30 min)</option>
+            <option value="Corte Raspado (1 pente) + Barba (R$ 120,00)">Corte Raspado (1 pente) + Barba — R$ 120,00 (60 min)</option>
+            <option value="Corte (R$ 70,00)">Corte — R$ 70,00 (30 min)</option>
+            <option value="Corte Raspado 1 pente (R$ 50,00)">Corte Raspado (1 pente) — R$ 50,00 (30 min)</option>
+            <option value="Barba (R$ 70,00)">Barba — R$ 70,00 (30 min)</option>
+            <option value="Barba + Sobrancelhas (R$ 90,00)">Barba + Sobrancelhas — R$ 90,00 (30 min)</option>
+            <option value="Barboterapia (R$ 90,00)">Barboterapia — R$ 90,00 (30 min)</option>
+            <option value="Barboterapia + Sobrancelhas (R$ 110,00)">Barboterapia + Sobrancelhas — R$ 110,00 (30 min)</option>
+            <option value="Acabamento (R$ 20,00)">Acabamento — R$ 20,00 (15 min)</option>
+            <option value="Sobrancelhas (R$ 20,00)">Sobrancelhas — R$ 20,00 (15 min)</option>
+            <option value="Limpeza de Pele (R$ 30,00)">Limpeza de Pele — R$ 30,00 (15 min)</option>
+            <option value="Hidratação (R$ 40,00)">Hidratação — R$ 40,00 (15 min)</option>
+            <option value="Depilação Cera Quente (R$ 40,00)">Depilação Cera Quente — R$ 40,00 (30 min)</option>
+            <option value="Pigmentação Barba (A partir de R$ 70,00)">Pigmentação Barba — A partir de R$ 70,00 (30 min)</option>
+            <option value="Coloração Cabelo (A partir de R$ 100,00)">Coloração Cabelo — A partir de R$ 100,00 (60 min)</option>
+            <option value="Luzes (A partir de R$ 100,00)">Luzes — A partir de R$ 100,00 (45 min)</option>
+            <option value="Botox (A partir de R$ 110,00)">Botox — A partir de R$ 110,00 (60 min)</option>
+            <option value="Progressiva (A partir de R$ 120,00)">Progressiva — A partir de R$ 120,00 (60 min)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 mb-1">Data</label>
+            <input type="date" id="clienteData" required
+                   class="w-full bg-bgMain border border-zinc-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandGold">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 mb-1">Horário</label>
+            <select id="clienteHora" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandGold">
+              <option>09:00</option><option>10:00</option><option>11:00</option>
+              <option>12:00</option><option>13:00</option><option>14:00</option>
+              <option>15:00</option><option>16:00</option><option>17:00</option>
+              <option>18:00</option><option>19:00</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-brandGreen hover:bg-brandGreenHover text-white font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer mt-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Confirmar no WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5511949556369?text=Salve!%20Vim%20pelo%20site%20da%20Ferreiro%20Barber%20Club."
+     target="_blank"
+     class="fixed bottom-5 right-5 z-40 w-14 h-14 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <script>
+    function abrirSimulador(servico = '', barbeiro = '') {
+      if (servico) document.getElementById('clienteServico').value = servico;
+      if (barbeiro) document.getElementById('clienteBarbeiro').value = barbeiro;
+      document.getElementById('modalSimulador').classList.remove('hidden');
+    }
+    function fecharSimulador() {
+      document.getElementById('modalSimulador').classList.add('hidden');
+    }
+    function enviarWhatsApp(e) {
+      e.preventDefault();
+      const nome = document.getElementById('clienteNome').value;
+      const barbeiro = document.getElementById('clienteBarbeiro').value;
+      const servico = document.getElementById('clienteServico').value;
+      const data = document.getElementById('clienteData').value.split('-').reverse().join('/');
+      const hora = document.getElementById('clienteHora').value;
+
+      const msg = `Salve, Ferreiro Barber! Gostaria de agendar pelo site:\n\n` +
+                  `👤 *Nome:* ${nome}\n` +
+                  `💈 *Profissional:* ${barbeiro}\n` +
+                  `✂️ *Serviço:* ${servico}\n` +
+                  `📅 *Data:* ${data} às ${hora}\n\n` +
+                  `Tem horário disponível?`;
+
+      window.open(`https://wa.me/5511949556369?text=${encodeURIComponent(msg)}`, '_blank');
+      fecharSimulador();
+    }
+  </script>
+</body>
+</html>
